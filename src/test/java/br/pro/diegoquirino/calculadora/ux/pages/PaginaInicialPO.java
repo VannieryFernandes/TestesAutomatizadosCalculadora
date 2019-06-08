@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+
+
 public class PaginaInicialPO extends PageObject {
 
 	@FindBy(id="welcome.button.calculardesconto")
@@ -26,15 +28,23 @@ public class PaginaInicialPO extends PageObject {
 				getDriver(), ListagemProdutoPO.class);
 	}
 	
-	public void acessarAjuda() {
-		clicar(this.botaoAjuda);
+	public ContactFormPO enviarMensagem() {
+		clicar(this.botaoContato);
+		return PageFactory.initElements(
+				getDriver(), ContactFormPO.class);
 	}
 	public void acessar() {
 		clicar(this.botaoCalcularDesconto);
 	}
 	
-	public void acessarContato() {
+	public void acessarAjuda() {
+		clicar(this.botaoAjuda);
+	}
+	
+	public ContactFormPO acessarContato() {
 		clicar(this.botaoContato);
+		return PageFactory.initElements(
+				getDriver(), ContactFormPO.class);
 	}
 
 }

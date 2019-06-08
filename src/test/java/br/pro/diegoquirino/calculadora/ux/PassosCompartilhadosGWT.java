@@ -6,8 +6,7 @@ import net.thucydides.core.annotations.Step;
 public class PassosCompartilhadosGWT {
 	//Dado que eu acesso a página inicial do sistema
     //E seleciono um produto na lista para cálculo
-	
-	@Step
+
 	PassosCompartilhadosSteps steps;
 	
 	@Dado("^que eu acesso a página inicial do sistema")

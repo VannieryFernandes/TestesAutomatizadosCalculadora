@@ -69,14 +69,19 @@ public class REQ001_CalcularDescontoTests {
     }
     
 	
-    @Test
-    @DisplayName("Calcular o fator de desconto para o Cliente A, Maior que 1000 unidades")
-    @Tags({@Tag("Automaticos"),@Tag("RF001")})
-    public void testCalcularFatorDescontoClienteAMenorQue100() throws Exception {
-    	String pageComfatorDesconto = getPageComFatorDesconto("A", 99);
-    	String valorComDesconto = calcularValorComDesconto(0.9);
-    	verificacao(pageComfatorDesconto, "0.9 (ou seja, 10% de desconto)", valorComDesconto);
-    }
+	/*
+	 * @Test
+	 * 
+	 * @DisplayName("Calcular o fator de desconto para o Cliente A, Maior que 1000 unidades"
+	 * )
+	 * 
+	 * @Tags({@Tag("Automaticos"),@Tag("RF001")}) public void
+	 * testCalcularFatorDescontoClienteAMenorQue100() throws Exception { String
+	 * pageComfatorDesconto = getPageComFatorDesconto("A", 99); String
+	 * valorComDesconto = calcularValorComDesconto(0.9);
+	 * verificacao(pageComfatorDesconto, "0.9 (ou seja, 10% de desconto)",
+	 * valorComDesconto); }
+	 */
 	 
 	/*
 	 * @Test
